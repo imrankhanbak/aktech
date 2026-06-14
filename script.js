@@ -36,6 +36,88 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
+    // Stats Counter Animation
+    const statItems = document.querySelectorAll('.stat-item');
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                const numberEl = entry.target.querySelector('.stat-number');
+                if (numberEl && !numberEl.dataset.animated) {
+                    numberEl.dataset.animated = 'true';
+                    animateCounter(numberEl);
+                }
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    statItems.forEach((item, i) => {
+        item.style.transitionDelay = `${i * 0.15}s`;
+        statsObserver.observe(item);
+    });
+
+    function animateCounter(el) {
+        const target = parseInt(el.dataset.target);
+        const duration = 2000;
+        const startTime = performance.now();
+
+        function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.floor(eased * target);
+            el.textContent = current;
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            } else {
+                el.textContent = target;
+            }
+        }
+        requestAnimationFrame(update);
+    }
+
+    // Case Studies Filter Tabs
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const caseCards = document.querySelectorAll('.case-card');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.dataset.filter;
+
+            caseCards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.classList.remove('hidden');
+                    card.style.transitionDelay = '0s';
+                } else {
+                    card.classList.add('hidden');
+                    card.style.transitionDelay = '0s';
+                }
+            });
+        });
+    });
+
+    // Animate case cards on scroll
+    const caseCardEls = document.querySelectorAll('.case-card');
+    const caseObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                caseObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    caseCardEls.forEach((card, i) => {
+        card.style.transitionDelay = `${i * 0.12}s`;
+        caseObserver.observe(card);
+    });
+
     // Handle form submission UX (Optional, since FormSubmit handles redirect)
     // The form currently uses formsubmit.co which will redirect to a generic thank you page.
     // To make it feel more premium, we could intercept it, but keeping it simple for static HTML.
