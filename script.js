@@ -123,53 +123,65 @@ document.addEventListener('DOMContentLoaded', () => {
     // To make it feel more premium, we could intercept it, but keeping it simple for static HTML.
     
     const form = document.querySelector('.contact-form');
-    const submitBtn = document.querySelector('.submit-btn');
+    if (form) {
+        const submitBtn = document.querySelector('.submit-btn');
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
-        submitBtn.style.opacity = '0.8';
-        submitBtn.disabled = true;
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nameVal = document.getElementById('name').value;
+            const emailVal = document.getElementById('email').value;
+            const messageVal = document.getElementById('message').value;
 
-        const formData = new FormData(form);
+            submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+            submitBtn.style.opacity = '0.8';
+            submitBtn.disabled = true;
 
-        fetch('https://formsubmit.co/ajax/ikkhanbak@gmail.com', {
-            method: "POST",
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success || data.success === "true") {
-                submitBtn.innerHTML = 'Sent Successfully! <i class="fa-solid fa-check"></i>';
-                submitBtn.style.background = '#10b981';
-                submitBtn.style.borderColor = '#10b981';
-                form.reset();
-            } else {
+            const formData = new FormData(form);
+
+            fetch('https://formsubmit.co/ajax/ikkhanbak@gmail.com', {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success || data.success === "true") {
+                    submitBtn.innerHTML = 'Sent Successfully! <i class="fa-solid fa-check"></i>';
+                    submitBtn.style.background = '#10b981';
+                    submitBtn.style.borderColor = '#10b981';
+                    
+                    // WhatsApp Message trigger
+                    const whatsappMsg = `Hello AK Technologies, I would like to get in touch.\n\n*Name:* ${nameVal}\n*Email:* ${emailVal}\n*Message:* ${messageVal}`;
+                    const whatsappUrl = `https://wa.me/923319059411?text=${encodeURIComponent(whatsappMsg)}`;
+                    window.open(whatsappUrl, '_blank');
+                    
+                    form.reset();
+                } else {
+                    submitBtn.innerHTML = 'Error! Try Again <i class="fa-solid fa-xmark"></i>';
+                    submitBtn.style.background = '#ef4444';
+                    submitBtn.style.borderColor = '#ef4444';
+                }
+                resetButton();
+            })
+            .catch(error => {
                 submitBtn.innerHTML = 'Error! Try Again <i class="fa-solid fa-xmark"></i>';
                 submitBtn.style.background = '#ef4444';
                 submitBtn.style.borderColor = '#ef4444';
+                resetButton();
+            });
+            
+            function resetButton() {
+                setTimeout(() => {
+                    submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-arrow-right"></i>';
+                    submitBtn.style.opacity = '1';
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                    submitBtn.style.borderColor = '';
+                }, 4000);
             }
-            resetButton();
-        })
-        .catch(error => {
-            submitBtn.innerHTML = 'Error! Try Again <i class="fa-solid fa-xmark"></i>';
-            submitBtn.style.background = '#ef4444';
-            submitBtn.style.borderColor = '#ef4444';
-            resetButton();
         });
-        
-        function resetButton() {
-            setTimeout(() => {
-                submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-arrow-right"></i>';
-                submitBtn.style.opacity = '1';
-                submitBtn.disabled = false;
-                submitBtn.style.background = '';
-                submitBtn.style.borderColor = '';
-            }, 4000);
-        }
-    });
+    }
 });
