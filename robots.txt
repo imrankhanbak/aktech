@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aktech.com/sitemap.xml
+Sitemap: https://aktechnologies.online/sitemap.xml
