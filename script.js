@@ -184,4 +184,151 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Mobile menu toggle
+    window.toggleMobileMenu = function() {
+        const overlay = document.getElementById('mobile-overlay');
+        if (overlay) {
+            overlay.classList.toggle('active');
+            if (overlay.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+    };
+
+    // Interactive AI Chatbot Demo
+    const initialDemoMessages = [
+        { from: 'bot', text: "👋 Hi! I'm your AI Sales Assistant. I help businesses in Pakistan & GCC turn conversations into customers automatically." },
+        { from: 'bot', text: "What would you like to automate today? More leads? Faster follow-ups? Or 24/7 WhatsApp support?" }
+    ];
+
+    const demoResponses = {
+        default: [
+            "Great question! Our AI systems can handle that automatically. Would you like to see how we can get you 3x more qualified leads?",
+            "Exactly what most of our clients in Karachi & Dubai ask! We've built this for businesses just like yours.",
+            "Perfect! Our AI Lead Generation + WhatsApp automation can do this 24/7. Want a quick demo of the results?",
+            "Yes! We automate exactly that. Most clients see results in under 30 days. Shall I show you a real case study?"
+        ],
+        lead: [
+            "🚀 Our AI Lead Generation System captures & qualifies leads instantly on your website and WhatsApp.",
+            "We can set up smart funnels that bring you 50+ qualified leads every week. Interested?"
+        ],
+        follow: [
+            "✅ AI Sales Automation sends personalized follow-ups automatically — no more lost deals!",
+            "We've increased conversion rates by 240% for clinics and real estate agencies using this."
+        ],
+        whatsapp: [
+            "📱 WhatsApp is our specialty! Instant replies, lead qualification, and appointment booking — all automated.",
+            "Your customers can book meetings directly in WhatsApp. Want to see it in action?"
+        ],
+        price: [
+            "Our custom AI packages start from PKR 85,000/month with full done-for-you implementation.",
+            "You only pay when the system is live and delivering results. No upfront tech fees."
+        ],
+        hello: [
+            "Hello! Great to meet you. How's business going in Pakistan these days?",
+            "Hi there! Ready to make your business run on AI autopilot?"
+        ]
+    };
+
+    function addDemoMessage(from, text) {
+        const container = document.getElementById('demo-chat-messages');
+        if (!container) return;
+        
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chat-message ${from}`;
+        
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'chat-avatar';
+        avatarDiv.innerHTML = from === 'bot' ? '<i class="fa-solid fa-robot"></i>' : '<i class="fa-solid fa-user"></i>';
+        
+        const bubbleDiv = document.createElement('div');
+        bubbleDiv.className = 'chat-bubble';
+        bubbleDiv.innerHTML = text;
+        
+        messageDiv.appendChild(avatarDiv);
+        messageDiv.appendChild(bubbleDiv);
+        
+        container.appendChild(messageDiv);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function showTypingIndicator() {
+        const container = document.getElementById('demo-chat-messages');
+        if (!container) return;
+        
+        const indicatorDiv = document.createElement('div');
+        indicatorDiv.id = 'typing-indicator';
+        indicatorDiv.className = 'chat-message bot';
+        
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'chat-avatar';
+        avatarDiv.innerHTML = '<i class="fa-solid fa-robot"></i>';
+        
+        const bubbleDiv = document.createElement('div');
+        bubbleDiv.className = 'chat-bubble';
+        bubbleDiv.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
+        
+        indicatorDiv.appendChild(avatarDiv);
+        indicatorDiv.appendChild(bubbleDiv);
+        
+        container.appendChild(indicatorDiv);
+        container.scrollTop = container.scrollHeight;
+    }
+
+    function removeTypingIndicator() {
+        const typing = document.getElementById('typing-indicator');
+        if (typing) typing.remove();
+    }
+
+    function getBotResponse(userText) {
+        const lower = userText.toLowerCase();
+        if (lower.includes('lead') || lower.includes('customer') || lower.includes('client')) {
+            return demoResponses.lead[Math.floor(Math.random() * demoResponses.lead.length)];
+        }
+        if (lower.includes('follow') || lower.includes('nurture')) {
+            return demoResponses.follow[Math.floor(Math.random() * demoResponses.follow.length)];
+        }
+        if (lower.includes('whatsapp') || lower.includes('chat') || lower.includes('bot')) {
+            return demoResponses.whatsapp[Math.floor(Math.random() * demoResponses.whatsapp.length)];
+        }
+        if (lower.includes('price') || lower.includes('cost') || lower.includes('package') || lower.includes('fee')) {
+            return demoResponses.price[Math.floor(Math.random() * demoResponses.price.length)];
+        }
+        if (lower.includes('hi') || lower.includes('hello') || lower.includes('hey')) {
+            return demoResponses.hello[Math.floor(Math.random() * demoResponses.hello.length)];
+        }
+        return demoResponses.default[Math.floor(Math.random() * demoResponses.default.length)];
+    }
+
+    window.sendDemoMessage = function() {
+        const input = document.getElementById('demo-chat-input');
+        if (!input) return;
+        const text = input.value.trim();
+        if (!text) return;
+        
+        addDemoMessage('user', text);
+        input.value = '';
+        
+        showTypingIndicator();
+        setTimeout(() => {
+            removeTypingIndicator();
+            const response = getBotResponse(text);
+            addDemoMessage('bot', response);
+        }, 1000 + Math.random() * 800);
+    };
+
+    window.resetDemoChat = function() {
+        const container = document.getElementById('demo-chat-messages');
+        if (!container) return;
+        container.innerHTML = '';
+        initialDemoMessages.forEach(msg => addDemoMessage(msg.from, msg.text));
+    };
+
+    // Load initial messages if demo is on page
+    if (document.getElementById('demo-chat-messages')) {
+        window.resetDemoChat();
+    }
 });

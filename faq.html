@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | AK Technologies AI Automation</title>
+    <meta name="description" content="Find answers to all your questions about our AI systems, WhatsApp automation, workflow integration, pricing, and how we help businesses grow in Pakistan & GCC.">
+    <meta name="keywords" content="AI automation FAQ, chatbot support queries, WhatsApp bot questions Pakistan, AK Technologies support">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AK Technologies">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aktech.com/faq.html">
+    <meta property="og:title" content="Frequently Asked Questions | AK Technologies AI Automation">
+    <meta property="og:description" content="Answers about our AI systems, WhatsApp bots, and integrations.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .faq-accordion {
+            max-width: 800px;
+            margin: 60px auto 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 0 5%;
+        }
+        
+        .faq-item {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: 24px 32px;
+            background: none;
+            border: none;
+            color: var(--text-main);
+            text-align: left;
+            font-family: 'Sora', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: var(--secondary);
+        }
+        
+        .faq-question i {
+            color: var(--secondary);
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 32px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.4s ease;
+        }
+        
+        .faq-item.active .faq-question {
+            color: var(--secondary);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding: 0 32px 32px;
+            transition: max-height 0.4s cubic-bezier(1, 0, 1, 0), padding 0.4s ease;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "datePublished": "2026-07-03T20:40:00+05:00",
+      "dateModified": "2026-07-03T20:40:00+05:00",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AI automation for business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI automation uses intelligent systems to handle repetitive tasks like lead follow-ups, customer support, appointment booking, and reporting — freeing your team to focus on high-value work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can AI automation help my business grow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By instantly responding to leads, nurturing prospects 24/7, booking appointments automatically, and reducing manual work, most clients see 3-5x more qualified leads within 30–60 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which businesses can benefit from AI automation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any business that deals with leads, customers, or repetitive processes — real estate, clinics, consultants, e-commerce, recruiters, law firms, education centers, and local service providers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with clients in Pakistan and GCC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We are based in Pakistan and actively serve clients across the UAE, Saudi Arabia, and international markets with WhatsApp-first automation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you automate WhatsApp and lead follow-ups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. WhatsApp automation is one of our core specialties — instant replies, smart qualification, and automated sales sequences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to implement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most systems are live within 2–4 weeks. We start delivering value from day one with the audit and strategy call."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer monthly support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every system includes ongoing optimization, performance reports, and monthly strategy sessions."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="highlight">AK</span> Technologies
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="services/ai-lead-generation.html"><i class="fa-solid fa-magnet"></i> AI Lead Generation</a>
+                    <a href="services/ai-sales-automation.html"><i class="fa-solid fa-handshake"></i> AI Sales Automation</a>
+                    <a href="services/ai-customer-support-automation.html"><i class="fa-solid fa-headset"></i> AI Customer Support</a>
+                    <a href="services/ai-marketing-automation.html"><i class="fa-solid fa-bullhorn"></i> AI Marketing Automation</a>
+                    <a href="services/business-process-automation.html"><i class="fa-solid fa-gears"></i> Process Automation</a>
+                    <a href="services/local-business-growth-automation.html"><i class="fa-solid fa-map-location-dot"></i> Local Business Growth</a>
+                    <a href="services/whatsapp-chatbot-automation.html"><i class="fa-brands fa-whatsapp"></i> WhatsApp Automation</a>
+                    <a href="services/ai-consulting-strategy.html"><i class="fa-solid fa-lightbulb"></i> AI Consulting & Strategy</a>
+                    <a href="services/custom-chatbot-development.html"><i class="fa-solid fa-code"></i> Custom Chatbot Dev</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="index.html#industries">Industries <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                <div class="dropdown-content grid-cols-2">
+                    <a href="industries/real-estate.html"><i class="fa-solid fa-building-user"></i> Real Estate</a>
+                    <a href="industries/clinics.html"><i class="fa-solid fa-hospital-user"></i> Clinics</a>
+                    <a href="industries/e-commerce.html"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</a>
+                    <a href="industries/consultants.html"><i class="fa-solid fa-user-tie"></i> Consultants</a>
+                    <a href="industries/recruitment.html"><i class="fa-solid fa-users-viewfinder"></i> Recruitment</a>
+                    <a href="industries/law-firm.html"><i class="fa-solid fa-scale-balanced"></i> Law Firms</a>
+                    <a href="industries/education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                    <a href="industries/travel-visa.html"><i class="fa-solid fa-passport"></i> Travel & Visa</a>
+                    <a href="industries/matchmaking.html"><i class="fa-solid fa-heart"></i> Matchmaking</a>
+                    <a href="industries/food-restaurants.html"><i class="fa-solid fa-utensils"></i> Food & Rest.</a>
+                    <a href="industries/beauty-salon.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Salons</a>
+                </div>
+            </li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary">Book Call</a></li>
+        </ul>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-overlay" class="mobile-overlay">
+        <div class="mobile-overlay-header">
+            <a href="index.html" class="logo">
+                <span class="highlight">AK</span> Technologies
+            </a>
+            <button class="btn-reset" onclick="toggleMobileMenu()" aria-label="Close Menu" style="font-size: 1.5rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="services.html" onclick="toggleMobileMenu()">Services</a></li>
+            <li><a href="index.html#industries" onclick="toggleMobileMenu()">Industries</a></li>
+            <li><a href="case-studies.html" onclick="toggleMobileMenu()">Case Studies</a></li>
+            <li><a href="faq.html" onclick="toggleMobileMenu()">FAQ</a></li>
+            <li><a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-align: center; margin-top: 10px;">Book Call</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <span class="badge">Common Inquiries</span>
+        <h1>Frequently Asked Questions & <span class="highlight-text">AI Automation FAQ</span></h1>
+        <p>Everything you need to know about our AI systems, integration process, and how we help you scale.</p>
+    </header>
+
+    <!-- FAQ Accordion -->
+    <div class="section-header" style="margin-top: 40px; margin-bottom: 20px;">
+        <h2 class="section-title" style="font-family: 'Sora', sans-serif; color: var(--text-main); font-size: 2rem; margin-bottom: 12px;">Answers to Common Questions</h2>
+        <p class="section-subtitle">Find solutions and learn more about our AI development methods.</p>
+    </div>
+    <section class="faq-accordion" style="margin-top: 20px;">
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>What is AI automation for business?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                AI automation uses intelligent systems to handle repetitive tasks like lead follow-ups, customer support, appointment booking, and reporting — freeing your team to focus on high-value work.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>How can AI automation help my business grow?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                By instantly responding to leads, nurturing prospects 24/7, booking appointments automatically, and reducing manual work, most clients see 3-5x more qualified leads within 30–60 days.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Which businesses can benefit from AI automation?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                Any business that deals with leads, customers, or repetitive processes — real estate, clinics, consultants, e-commerce, recruiters, law firms, education centers, and local service providers.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Do you work with clients in Pakistan and GCC?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                Yes! We are based in Pakistan and actively serve clients across the UAE, Saudi Arabia, and international markets with WhatsApp-first automation.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Can you automate WhatsApp and lead follow-ups?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                Absolutely. WhatsApp automation is one of our core specialties — instant replies, smart qualification, and automated sales sequences.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>How long does it take to implement?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                Most systems are live within 2–4 weeks. We start delivering value from day one with the audit and strategy call.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Do you offer monthly support?</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                Yes. Every system includes ongoing optimization, performance reports, and monthly strategy sessions.
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="contact" style="padding: 80px 8% 120px;">
+        <div class="contact-container" style="grid-template-columns: 1fr; text-align: center; gap: 30px; padding: 50px;">
+            <div class="contact-info" style="margin: 0 auto; max-width: 700px;">
+                <h2>Start Your Digital Transformation</h2>
+                <p style="margin-bottom: 24px;">Ready to discuss your software project? Get in touch with our experts now and let us build the software that scales your operations.</p>
+                <a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20get%20a%20free%20AI%20consultation." target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-block;">Book Call On WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="logo">
+                <span class="highlight">AK</span> Technologies
+            </a>
+            <p>&copy; 2026 AK Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    
+                    // Collapse other items
+                    document.querySelectorAll('.faq-item').forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

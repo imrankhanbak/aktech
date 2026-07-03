@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | AK Technologies - Start Your Tech Project Today</title>
-    <meta name="description" content="Get in touch with AK Technologies. Submit your project requirements to hire our AI automation, custom ERP, CRM, web development, and Salesforce consultants. Reach out via email or direct WhatsApp.">
-    <meta name="keywords" content="contact AK Technologies, hire software developers Pakistan, AI automation consultation, custom ERP quote, Salesforce support, web application developers Lahore">
+    <title>Book a Consultation Call | Contact AK Technologies</title>
+    <meta name="description" content="Contact AK Technologies, Pakistan's premier AI automation agency. Book a free consultation on WhatsApp or submit your software project query today.">
+    <meta name="keywords" content="contact AK Technologies, book AI consultation Karachi, hire chatbot developers Lahore, custom software quote, WhatsApp automation consulting Pakistan, Salesforce developers">
     <meta name="robots" content="index, follow">
     <meta name="author" content="AK Technologies">
 
@@ -31,27 +31,108 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "datePublished": "2026-07-03T20:40:00+05:00",
+      "dateModified": "2026-07-03T20:40:00+05:00",
+      "name": "Book a Consultation Call | Contact AK Technologies",
+      "description": "Contact AK Technologies, Pakistan's premier AI automation agency. Book a free consultation on WhatsApp or submit your software project query today.",
+      "url": "https://aktech.com/contact.html",
+      "mainEntity": {
+        "@type": "ProfessionalService",
+        "name": "AK Technologies",
+        "url": "https://aktech.com/",
+        "telephone": "+923319059411",
+        "email": "ikkhanbak@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Main Boulevard",
+          "addressLocality": "Lahore",
+          "addressRegion": "Punjab",
+          "postalCode": "54000",
+          "addressCountry": "PK"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Background Animation -->
     <div class="bg-animation"></div>
 
-    <!-- Navigation -->
+        <!-- Navigation -->
     <nav class="navbar">
         <a href="index.html" class="logo">
             <span class="highlight">AK</span> Technologies
         </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="services/ai-lead-generation.html"><i class="fa-solid fa-magnet"></i> AI Lead Generation</a>
+                    <a href="services/ai-sales-automation.html"><i class="fa-solid fa-handshake"></i> AI Sales Automation</a>
+                    <a href="services/ai-customer-support-automation.html"><i class="fa-solid fa-headset"></i> AI Customer Support</a>
+                    <a href="services/ai-marketing-automation.html"><i class="fa-solid fa-bullhorn"></i> AI Marketing Automation</a>
+                    <a href="services/business-process-automation.html"><i class="fa-solid fa-gears"></i> Process Automation</a>
+                    <a href="services/local-business-growth-automation.html"><i class="fa-solid fa-map-location-dot"></i> Local Business Growth</a>
+                    <a href="services/whatsapp-chatbot-automation.html"><i class="fa-brands fa-whatsapp"></i> WhatsApp Automation</a>
+                    <a href="services/ai-consulting-strategy.html"><i class="fa-solid fa-lightbulb"></i> AI Consulting & Strategy</a>
+                    <a href="services/custom-chatbot-development.html"><i class="fa-solid fa-code"></i> Custom Chatbot Dev</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="index.html#industries">Industries <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                <div class="dropdown-content grid-cols-2">
+                    <a href="industries/real-estate.html"><i class="fa-solid fa-building-user"></i> Real Estate</a>
+                    <a href="industries/clinics.html"><i class="fa-solid fa-hospital-user"></i> Clinics</a>
+                    <a href="industries/e-commerce.html"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</a>
+                    <a href="industries/consultants.html"><i class="fa-solid fa-user-tie"></i> Consultants</a>
+                    <a href="industries/recruitment.html"><i class="fa-solid fa-users-viewfinder"></i> Recruitment</a>
+                    <a href="industries/law-firm.html"><i class="fa-solid fa-scale-balanced"></i> Law Firms</a>
+                    <a href="industries/education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                    <a href="industries/travel-visa.html"><i class="fa-solid fa-passport"></i> Travel & Visa</a>
+                    <a href="industries/matchmaking.html"><i class="fa-solid fa-heart"></i> Matchmaking</a>
+                    <a href="industries/food-restaurants.html"><i class="fa-solid fa-utensils"></i> Food & Rest.</a>
+                    <a href="industries/beauty-salon.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Salons</a>
+                </div>
+            </li>
             <li><a href="case-studies.html">Case Studies</a></li>
-            <li><a href="contact.html" class="btn-primary">Get in Touch</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary">Book Call</a></li>
         </ul>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-overlay" class="mobile-overlay">
+        <div class="mobile-overlay-header">
+            <a href="index.html" class="logo">
+                <span class="highlight">AK</span> Technologies
+            </a>
+            <button class="btn-reset" onclick="toggleMobileMenu()" aria-label="Close Menu" style="font-size: 1.5rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="services.html" onclick="toggleMobileMenu()">Services</a></li>
+            <li><a href="index.html#industries" onclick="toggleMobileMenu()">Industries</a></li>
+            <li><a href="case-studies.html" onclick="toggleMobileMenu()">Case Studies</a></li>
+            <li><a href="faq.html" onclick="toggleMobileMenu()">FAQ</a></li>
+            <li><a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-align: center; margin-top: 10px;">Book Call</a></li>
+        </ul>
+    </div>
 
     <!-- Page Header -->
     <header class="page-header">
-        <h1>Get in <span class="highlight-text">Touch</span></h1>
+        <h1>Book a Free <span class="highlight-text">AI Automation Consultation</span></h1>
         <p>Ready to transform your business with cutting-edge software? Fill out the form or chat with us directly on WhatsApp.</p>
     </header>
 
@@ -74,12 +155,13 @@
                     <i class="fa-brands fa-whatsapp" style="background: rgba(37, 211, 102, 0.1); color:#25d366;"></i>
                     <div>
                         <span style="display:block; font-size:0.85rem; color:var(--text-muted);">Direct WhatsApp</span>
-                        <a href="https://wa.me/923319059411" target="_blank" rel="noopener noreferrer" style="color:#25d366; font-weight:600;">+92 331 9059411</a>
+                        <a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20start%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" style="color:#25d366; font-weight:600;">+92 331 9059411</a>
                     </div>
                 </div>
             </div>
             
             <div class="contact-form-wrapper">
+                <h2 class="form-title" style="margin-bottom: 24px; font-family: 'Sora', sans-serif; font-size: 1.5rem; font-weight: 600; color: var(--text-main);">Send Us a Message</h2>
                 <form id="contact-form" class="contact-form">
                     <div class="input-group">
                         <label for="name">Full Name</label>
@@ -113,7 +195,7 @@
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/923319059411" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
