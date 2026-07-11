@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AK Technologies Public API",
+    "version": "1.0.0",
+    "description": "API endpoints for connecting with AK Technologies AI Automation services."
+  },
+  "paths": {
+    "/contact": {
+      "post": {
+        "summary": "Submit a project discovery query",
+        "description": "Allows AI agents to submit a project consultation request directly on behalf of a client.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string", "description": "Full name of the prospect" },
+                  "email": { "type": "string", "description": "Email address" },
+                  "message": { "type": "string", "description": "Project details or requirements" }
+                },
+                "required": ["name", "email", "message"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Request submitted successfully"
+          }
+        }
+      }
+    }
+  }
+}

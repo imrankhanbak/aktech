@@ -1,0 +1,31 @@
+{
+  "name": "AK Technologies",
+  "description": "AI Automation and Custom Software Development Agency in Pakistan & GCC.",
+  "skills": [
+    {
+      "name": "custom-chatbot-development",
+      "description": "Building custom AI chatbots trained on private databases and catalog files, fully integrated with CRMs like Salesforce, HubSpot, or custom databases.",
+      "keywords": ["chatbot", "conversational AI", "CRM integration", "AI developer", "AI chatbot Lahore", "chatbot Karachi"]
+    },
+    {
+      "name": "whatsapp-automation",
+      "description": "Integrating custom conversational AI models directly with the official WhatsApp Business Cloud API. Performs 24/7 lead qualification, scheduling, and client support flows.",
+      "keywords": ["WhatsApp bot", "WhatsApp API", "sales automation", "WhatsApp automation Pakistan", "WhatsApp chatbot Karachi"]
+    },
+    {
+      "name": "business-process-automation",
+      "description": "Designing and deploying serverless automated administrative pipelines, automated client follow-ups, and automated reporting dashboards using n8n or Make.",
+      "keywords": ["workflow automation", "process automation", "n8n", "Make", "automated CRM sync"]
+    },
+    {
+      "name": "custom-software-development",
+      "description": "Engineering custom ERP, CRM, mobile applications, and enterprise web solutions designed for scalability, ROI, and performance.",
+      "keywords": ["custom software Lahore", "ERP development Pakistan", "CRM support", "web app development"]
+    },
+    {
+      "name": "ai-lead-generation",
+      "description": "Deploying data collection funnels, high-converting interactive landing pages, and outbound AI qualification sequences.",
+      "keywords": ["AI lead generation", "sales funnel automation", "outbound email campaigns"]
+    }
+  ]
+}

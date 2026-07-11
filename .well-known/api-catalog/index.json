@@ -1,0 +1,9 @@
+{
+  "catalog": [
+    {
+      "name": "AK Technologies Public API",
+      "type": "openapi",
+      "url": "https://aktechnologies.online/.well-known/api-catalog/openapi.json"
+    }
+  ]
+}

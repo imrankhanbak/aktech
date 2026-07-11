@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "ak-technologies-agent-readiness",
+  "version": "1.0.0",
+  "protocolVersion": "2025-11-25",
+  "description": "Metadata discovery for AK Technologies - AI Automation Agency Pakistan & GCC. Provides structural information about chatbot services, WhatsApp automation, and custom software systems.",
+  "remotes": [],
+  "capabilities": {
+    "resources": {
+      "subscribe": false
+    },
+    "prompts": {}
+  }
+}
