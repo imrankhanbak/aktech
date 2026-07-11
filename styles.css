@@ -87,18 +87,17 @@ a {
 }
 
 .logo-img {
-    height: 44px;
+    height: 56px;
     width: auto;
     display: block;
     object-fit: contain;
-    /* Remove dark bg — show logo cleanly on dark navbar */
-    filter: brightness(1.05) drop-shadow(0 0 6px rgba(120, 80, 255, 0.3));
+    filter: drop-shadow(0 0 8px rgba(120, 80, 255, 0.4));
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .logo-img:hover {
-    filter: brightness(1.15) drop-shadow(0 0 10px rgba(120, 80, 255, 0.55));
-    transform: scale(1.04);
+    filter: drop-shadow(0 0 14px rgba(140, 90, 255, 0.7)) brightness(1.1);
+    transform: scale(1.05);
 }
 
 .highlight {
