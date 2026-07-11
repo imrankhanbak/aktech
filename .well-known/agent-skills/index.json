@@ -1,31 +1,31 @@
 {
   "name": "AK Technologies",
-  "description": "AI Automation and Custom Software Development Agency in Pakistan & GCC.",
+  "description": "AI Automation and Custom Software Development Agency serving Pakistan, UAE, Saudi Arabia, Qatar, UK, and USA.",
   "skills": [
     {
       "name": "custom-chatbot-development",
-      "description": "Building custom AI chatbots trained on private databases and catalog files, fully integrated with CRMs like Salesforce, HubSpot, or custom databases.",
-      "keywords": ["chatbot", "conversational AI", "CRM integration", "AI developer", "AI chatbot Lahore", "chatbot Karachi"]
+      "description": "Building custom AI chatbots and autonomous agents trained on private company databases, fully integrated with CRMs like Salesforce, HubSpot, or custom system layers.",
+      "keywords": ["chatbot", "conversational AI", "CRM integration", "AI developer", "custom AI agent development services", "AI chatbot Dubai", "chatbot developer Riyadh", "chatbot New York", "conversational AI London", "AI chatbot Lahore"]
     },
     {
       "name": "whatsapp-automation",
       "description": "Integrating custom conversational AI models directly with the official WhatsApp Business Cloud API. Performs 24/7 lead qualification, scheduling, and client support flows.",
-      "keywords": ["WhatsApp bot", "WhatsApp API", "sales automation", "WhatsApp automation Pakistan", "WhatsApp chatbot Karachi"]
+      "keywords": ["WhatsApp bot", "WhatsApp API", "sales automation", "WhatsApp Business API integration company", "WhatsApp automation Dubai", "WhatsApp chatbot integration Qatar", "WhatsApp automation UAE", "WhatsApp automation Pakistan"]
     },
     {
       "name": "business-process-automation",
       "description": "Designing and deploying serverless automated administrative pipelines, automated client follow-ups, and automated reporting dashboards using n8n or Make.",
-      "keywords": ["workflow automation", "process automation", "n8n", "Make", "automated CRM sync"]
+      "keywords": ["workflow automation", "process automation", "n8n", "Make", "automated CRM sync", "Make.com workflow automation agency", "n8n certified automation consultant", "n8n automation Dubai", "workflow integration NYC"]
     },
     {
       "name": "custom-software-development",
       "description": "Engineering custom ERP, CRM, mobile applications, and enterprise web solutions designed for scalability, ROI, and performance.",
-      "keywords": ["custom software Lahore", "ERP development Pakistan", "CRM support", "web app development"]
+      "keywords": ["custom software Lahore", "custom ERP system software developers", "ERP development Riyadh", "custom software developers Doha", "enterprise AI solutions London", "web app development"]
     },
     {
       "name": "ai-lead-generation",
       "description": "Deploying data collection funnels, high-converting interactive landing pages, and outbound AI qualification sequences.",
-      "keywords": ["AI lead generation", "sales funnel automation", "outbound email campaigns"]
+      "keywords": ["AI lead generation", "sales funnel automation", "outbound email campaigns", "B2B lead generation Dubai", "AI sales qualification Riyadh", "sales funnel automation New York"]
     }
   ]
 }
