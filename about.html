@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AK Technologies | Premier AI Automation Agency & Custom Software Developers</title>
+    <meta name="description" content="Learn about AK Technologies, Pakistan's leading AI automation agency. Founded by Tehmina Akram, we build custom AI agents, n8n & Make workflows, WhatsApp Business API integrations, and bespoke software systems.">
+    <meta name="keywords" content="about AK Technologies, Tehmina Akram, AI automation agency Pakistan, hire AI developers Lahore, custom software developers Karachi, n8n workflow developers, Make.com automation agency, WhatsApp Business API integration, agentic AI solutions GCC, Middle East AI consulting">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AK Technologies">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="canonical" href="https://aktechnologies.online/about.html">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aktechnologies.online/about.html">
+    <meta property="og:title" content="About Us | AK Technologies - AI Automation & Custom Software Agency">
+    <meta property="og:description" content="Bespoke AI agents, WhatsApp Business API chatbots, and workflow automation systems built for global businesses.">
+    <meta property="og:image" content="https://aktechnologies.online/assets/og-image.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org Organization JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AK Technologies",
+      "url": "https://aktechnologies.online/",
+      "logo": "https://aktechnologies.online/assets/logo.png",
+      "image": "https://aktechnologies.online/assets/logo.png",
+      "description": "AK Technologies is an elite software solutions and AI automation agency helping businesses scale through cutting-edge agentic AI development, RAG pipelines, n8n/Make.com workflows, and WhatsApp Business API integration.",
+      "telephone": "+923319059411",
+      "founder": {
+        "@type": "Person",
+        "name": "Tehmina Akram",
+        "jobTitle": "Founder & CEO",
+        "sameAs": "https://www.linkedin.com/in/tehmina-akram/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Main Boulevard",
+        "addressLocality": "Lahore",
+        "addressRegion": "Punjab",
+        "postalCode": "54000",
+        "addressCountry": "PK"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/aktechnologiesai",
+        "https://www.facebook.com/AKTECHNOLOGIESAI"
+      ]
+    }
+    </script>
+    
+    <style>
+        .about-section {
+            padding: 80px 8% 60px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: start;
+        }
+        
+        @media (max-width: 968px) {
+            .about-section {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        .about-text h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .about-text p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .about-stat-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 32px 20px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .about-stat-card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .about-stat-num {
+            display: block;
+            font-family: 'Sora', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+        
+        .about-stat-label {
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .about-stat-desc {
+            display: block;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        .founder-quote {
+            background: rgba(6, 182, 212, 0.05);
+            border-left: 4px solid var(--secondary);
+            padding: 30px;
+            border-radius: 0 20px 20px 0;
+            margin: 40px 0;
+        }
+
+        .founder-quote p {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .founder-quote span {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        /* How We Work Layout */
+        .how-we-work-section {
+            padding: 80px 8% 100px;
+            background: linear-gradient(180deg, transparent, rgba(6, 182, 212, 0.02));
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .work-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 40px 30px;
+            border-radius: 24px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work-card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .work-num {
+            font-family: 'Sora', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(6, 182, 212, 0.15);
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .work-card h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 16px;
+        }
+
+        .work-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="AK Technologies" class="logo-img"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="services.html">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                <div class="dropdown-content">
+                    <a href="services/ai-lead-generation.html"><i class="fa-solid fa-magnet"></i> AI Lead Generation</a>
+                    <a href="services/ai-sales-automation.html"><i class="fa-solid fa-handshake"></i> AI Sales Automation</a>
+                    <a href="services/ai-customer-support-automation.html"><i class="fa-solid fa-headset"></i> AI Customer Support</a>
+                    <a href="services/ai-marketing-automation.html"><i class="fa-solid fa-bullhorn"></i> AI Marketing Automation</a>
+                    <a href="services/business-process-automation.html"><i class="fa-solid fa-gears"></i> Process Automation</a>
+                    <a href="services/local-business-growth-automation.html"><i class="fa-solid fa-map-location-dot"></i> Local Business Growth</a>
+                    <a href="services/whatsapp-chatbot-automation.html"><i class="fa-brands fa-whatsapp"></i> WhatsApp Automation</a>
+                    <a href="services/ai-consulting-strategy.html"><i class="fa-solid fa-lightbulb"></i> AI Consulting & Strategy</a>
+                    <a href="services/custom-chatbot-development.html"><i class="fa-solid fa-code"></i> Custom Chatbot Dev</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="index.html#industries">Industries <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem; margin-left: 2px;"></i></a>
+                <div class="dropdown-content grid-cols-2">
+                    <a href="industries/real-estate.html"><i class="fa-solid fa-building-user"></i> Real Estate</a>
+                    <a href="industries/clinics.html"><i class="fa-solid fa-hospital-user"></i> Clinics</a>
+                    <a href="industries/e-commerce.html"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</a>
+                    <a href="industries/consultants.html"><i class="fa-solid fa-user-tie"></i> Consultants</a>
+                    <a href="industries/recruitment.html"><i class="fa-solid fa-users-viewfinder"></i> Recruitment</a>
+                    <a href="industries/law-firm.html"><i class="fa-solid fa-scale-balanced"></i> Law Firms</a>
+                    <a href="industries/education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                    <a href="industries/travel-visa.html"><i class="fa-solid fa-passport"></i> Travel & Visa</a>
+                    <a href="industries/matchmaking.html"><i class="fa-solid fa-heart"></i> Matchmaking</a>
+                    <a href="industries/food-restaurants.html"><i class="fa-solid fa-utensils"></i> Food & Rest.</a>
+                    <a href="industries/beauty-salon.html"><i class="fa-solid fa-wand-magic-sparkles"></i> Salons</a>
+                </div>
+            </li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary">Book Call</a></li>
+        </ul>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-overlay" class="mobile-overlay">
+        <div class="mobile-overlay-header">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="AK Technologies" class="logo-img"></a>
+            <button class="btn-reset" onclick="toggleMobileMenu()" aria-label="Close Menu" style="font-size: 1.5rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="about.html" onclick="toggleMobileMenu()">About</a></li>
+            <li><a href="services.html" onclick="toggleMobileMenu()">Services</a></li>
+            <li><a href="index.html#industries" onclick="toggleMobileMenu()">Industries</a></li>
+            <li><a href="case-studies.html" onclick="toggleMobileMenu()">Case Studies</a></li>
+            <li><a href="faq.html" onclick="toggleMobileMenu()">FAQ</a></li>
+            <li><a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-align: center; margin-top: 10px;">Book Call</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <span class="badge">Practical systems. Real results.</span>
+        <h1>About <span class="highlight-text">AK Technologies</span></h1>
+        <p>We help growing businesses automate slow, manual processes so they can scale without the operational chaos.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="about-section">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p><strong>How we started: A simple, frustrating observation.</strong></p>
+            <p>Tehmina Akram founded AK Technologies after seeing the same issue over and over: great businesses losing customers not because of a bad product, but because they took too long to reply, forgot to follow up, or spent hours copy-pasting data between tools that didn't talk to each other.</p>
+            <p>In just 2–3 years, that idea has grown into a dedicated B2B automation agency — building custom WhatsApp integrations, n8n/Make workflows, and custom CRM/ERP databases for clients across Pakistan, Dubai, Riyadh, Qatar, London, and New York.</p>
+            <p>But our core philosophy hasn't changed. We don't just write code. We study your actual, daily workflow, find where hours are being lost, and build a system that plugs the leak permanently.</p>
+
+            <h2 style="margin-top: 40px;">Meet the Founder</h2>
+            <p><strong>Tehmina Akram — Founder & CEO, AK Technologies</strong></p>
+            <p>Tehmina leads product strategy and client delivery, focusing on turning manual B2B bottlenecks into automated, revenue-recovering systems. Connect with Tehmina on <a href="https://www.linkedin.com/in/tehmina-akram/" target="_blank" rel="noopener noreferrer" style="color: var(--secondary); text-decoration: underline;"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>.</p>
+
+            <!-- Founder Quote -->
+            <div class="founder-quote">
+                <p>"We started AK Technologies because too many good businesses were losing customers to slow, manual processes — not bad products. Our job is to close that gap with AI."</p>
+                <span>— Tehmina Akram, Founder & CEO</span>
+            </div>
+        </div>
+        
+        <div class="about-stats">
+            <div class="about-stat-card">
+                <span class="about-stat-num">30+</span>
+                <span class="about-stat-label">Projects Delivered</span>
+                <span class="about-stat-desc">Custom AI & CRM setups</span>
+            </div>
+            <div class="about-stat-card">
+                <span class="about-stat-num">98%</span>
+                <span class="about-stat-label">Client Satisfaction</span>
+                <span class="about-stat-desc">Track record of success</span>
+            </div>
+            <div class="about-stat-card">
+                <span class="about-stat-num">6+</span>
+                <span class="about-stat-label">Markets Served</span>
+                <span class="about-stat-desc">Pakistan, GCC, UK, USA</span>
+            </div>
+            <div class="about-stat-card">
+                <span class="about-stat-num">2–3</span>
+                <span class="about-stat-label">Years in Operation</span>
+                <span class="about-stat-desc">Accelerating B2B businesses</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="how-we-work-section">
+        <div class="section-header" style="text-align: center;">
+            <span class="badge">Ecosystem Design</span>
+            <h2 class="section-title">How We <span class="highlight-text">Work</span></h2>
+            <p class="section-subtitle">A straightforward, results-first approach.</p>
+        </div>
+
+        <div class="grid-3">
+            <!-- Step 1 -->
+            <div class="work-card">
+                <span class="work-num">01</span>
+                <h3>We map the leaks first</h3>
+                <p>We don't guess. We sit down and map out exactly where you are losing leads or wasting hours before we write a single line of code.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="work-card">
+                <span class="work-num">02</span>
+                <h3>Done-for-you implementation</h3>
+                <p>We don't just hand you a manual and walk away. We handle the setup, API approvals, software integrations, and team training from start to finish.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="work-card">
+                <span class="work-num">03</span>
+                <h3>Built for local behavior</h3>
+                <p>A WhatsApp flow that qualifies leads in Karachi isn't the same as an email sequence for a client in London. We customize every system to match the exact communication style of your local market.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="work-card">
+                <span class="work-num">04</span>
+                <h3>Practical results over novelty</h3>
+                <p>We don't build fancy AI tools just because they sound cool. If a workflow doesn't save your staff hours or recover lost leads, we don't build it.</p>
+            </div>
+            <!-- Step 5 -->
+            <div class="work-card">
+                <span class="work-num">05</span>
+                <h3>You own the infrastructure</h3>
+                <p>No developer lock-in. We build systems on accounts and platforms you own, so you are always in full control of your data and tools.</p>
+            </div>
+            <!-- Step 6 -->
+            <div class="work-card">
+                <span class="work-num">06</span>
+                <h3>Direct access to the builders</h3>
+                <p>No middleman account managers playing telephone. You work directly with the developers building your system, led by the founder.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="contact" style="padding: 80px 8% 120px; border-top: 1px solid var(--glass-border);">
+        <div class="contact-container" style="grid-template-columns: 1fr; text-align: center; gap: 30px; padding: 50px;">
+            <div class="contact-info" style="margin: 0 auto; max-width: 700px;">
+                <h2>Let's automate what's slowing your business down.</h2>
+                <p style="margin-bottom: 24px;">Book a free strategy call and get 3–7 automation opportunities identified for your business.</p>
+                <a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-block;">Book Free Strategy Call <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="AK Technologies" class="logo-img"></a>
+            <p>&copy; 2026 AK Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923319059411?text=Hi%20AK%20Technologies,%20I%20would%20like%20to%20discuss%20an%20AI%20automation%20project." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const overlay = document.getElementById('mobile-overlay');
+            overlay.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

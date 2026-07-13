@@ -1,189 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://aktechnologies.online/faq.html</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://aktechnologies.online/</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://aktechnologies.online/index.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <loc>https://aktechnologies.online/services.html</loc>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://aktechnologies.online/services.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <loc>https://aktechnologies.online/case-studies.html</loc>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://aktechnologies.online/case-studies.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <loc>https://aktechnologies.online/faq.html</loc>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/contact.html</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://aktechnologies.online/about.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Service Pages -->
+    <url>
+        <loc>https://aktechnologies.online/services/ai-lead-generation.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://aktechnologies.online/services/ai-lead-generation.html</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://aktechnologies.online/services/ai-sales-automation.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/ai-customer-support-automation.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/ai-marketing-automation.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/business-process-automation.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/local-business-growth-automation.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/whatsapp-chatbot-automation.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/ai-consulting-strategy.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/services/custom-chatbot-development.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
+
+    <!-- Industry Pages -->
     <url>
         <loc>https://aktechnologies.online/industries/real-estate.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/clinics.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/e-commerce.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/consultants.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/recruitment.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/law-firm.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/education.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/travel-visa.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/matchmaking.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/food-restaurants.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://aktechnologies.online/industries/beauty-salon.html</loc>
-        <lastmod>2026-07-11</lastmod>
+        <lastmod>2026-07-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://aktechnologies.online/.well-known/mcp.json</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://aktechnologies.online/.well-known/mcp/server-card.json</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://aktechnologies.online/.well-known/agent-skills/index.json</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://aktechnologies.online/.well-known/api-catalog/index.json</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://aktechnologies.online/.well-known/api-catalog/openapi.json</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
     </url>
 </urlset>
