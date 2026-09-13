@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Handle form submission UX (Optional, since FormSubmit handles redirect)
-    // The form currently uses formsubmit.co which will redirect to a generic thank you page.
-    // To make it feel more premium, we could intercept it, but keeping it simple for static HTML.
+    // The form redirects directly to WhatsApp.
     
     const form = document.querySelector('.contact-form');
     if (form) {
@@ -137,41 +136,19 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.style.opacity = '0.8';
             submitBtn.disabled = true;
 
-            const formData = new FormData(form);
-
-            fetch('https://formsubmit.co/ajax/ikkhanbak@gmail.com', {
-                method: "POST",
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success || data.success === "true") {
-                    submitBtn.innerHTML = 'Sent Successfully! <i class="fa-solid fa-check"></i>';
-                    submitBtn.style.background = '#10b981';
-                    submitBtn.style.borderColor = '#10b981';
-                    
-                    // WhatsApp Message trigger
-                    const whatsappMsg = `Hello AK Technologies, I would like to get in touch.\n\n*Name:* ${nameVal}\n*Email:* ${emailVal}\n*Message:* ${messageVal}`;
-                    const whatsappUrl = `https://wa.me/923319059411?text=${encodeURIComponent(whatsappMsg)}`;
-                    window.open(whatsappUrl, '_blank');
-                    
-                    form.reset();
-                } else {
-                    submitBtn.innerHTML = 'Error! Try Again <i class="fa-solid fa-xmark"></i>';
-                    submitBtn.style.background = '#ef4444';
-                    submitBtn.style.borderColor = '#ef4444';
-                }
+            // WhatsApp Message trigger direct
+            setTimeout(() => {
+                submitBtn.innerHTML = 'Redirecting to WhatsApp... <i class="fa-brands fa-whatsapp"></i>';
+                submitBtn.style.background = '#25d366';
+                submitBtn.style.borderColor = '#25d366';
+                
+                const whatsappMsg = `Hello AK Technologies, I would like to get in touch.\n\n*Name:* ${nameVal}\n*Email:* ${emailVal}\n*Message:* ${messageVal}`;
+                const whatsappUrl = `https://wa.me/923319059411?text=${encodeURIComponent(whatsappMsg)}`;
+                window.open(whatsappUrl, '_blank');
+                
+                form.reset();
                 resetButton();
-            })
-            .catch(error => {
-                submitBtn.innerHTML = 'Error! Try Again <i class="fa-solid fa-xmark"></i>';
-                submitBtn.style.background = '#ef4444';
-                submitBtn.style.borderColor = '#ef4444';
-                resetButton();
-            });
+            }, 600);
             
             function resetButton() {
                 setTimeout(() => {
